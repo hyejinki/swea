@@ -11,8 +11,4 @@ for i in range(n):
                 rotated_90_arr[j][k] = arr[size-1-k][j]    # 90도 / 인덱스는 size-1 
                 rotated_180_arr[j][k] = arr[size-1-j][size-1-k]
                 rotated_180_arr[j][k] = arr[k][size-1-j]   
-            print(''.join(map(str, rotated_90_arr[j], rotated_180_arr[j], rotated_270_arr[j])))
-            
-    
-
-2
+            print(''.join(map(str, rotated_90_arr[j] + rotated_180_arr[j] + rotated_270_arr[j])))
