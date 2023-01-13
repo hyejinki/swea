@@ -14,12 +14,13 @@ for N in range(n):
     rotated_180 = rotate(rotated_90)
     rotated_270 = rotate(rotated_180)
     print(f"#{N+1}")
-    for i in range(n):
+    for i in range(size):
+        #for j in range(0,size):
         #print(''.join(rotated_90[i]), ''.join(rotated_180[i]), ''.join(rotated_270[i]))
-        print(''.join(map(str, rotated_90[i]+ rotated_180[i]+ rotated_270[i])))
-
-
-
+        #print(''.join(map(str, rotated_90[i]+ rotated_180[i]+ rotated_270[i])))
+        #print(*rotated_90[i], sep = '')
+        print(*rotated_90[i][j], *rotated_180[i][j], *rotated_270[i][j], sep = '')
+        
 '''
 
 n = int(input())    # 테케 개수
