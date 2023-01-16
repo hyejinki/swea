@@ -5,12 +5,14 @@ for test_case in range(1, T + 1):
     N, M = map(int, input().split())
     A_arr = list(map(int, input().split()))
     B_arr = list(map(int, input().split()))
-    ans = 0
+    res = []
     for j in range(M-N+1):
-        for i in range(N):
-            mul_ans = A_arr[i]*B_arr[j]
-           
-
-
-    
-    print (f"#{test_case} {ans}")
+        sum = 0
+        for i in range(N):  
+            mul_ans = A_arr[i]*B_arr[i+j] 
+            print (A_arr[i])
+            print (B_arr[i+j])
+            sum += mul_ans
+    res.append(sum)
+   
+    print (f"#{test_case} {max(res)}")
