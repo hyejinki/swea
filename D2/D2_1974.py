@@ -9,7 +9,6 @@ def transpose(arr): #열 체크를 위한 전치행렬 구하기
             arr_T[j][i] = arr[i][j]
     return (arr_T)
 
-
 def check():
     #행 체크
     for i in range(size):
@@ -27,8 +26,6 @@ def check():
             if len(set(box)) != 9:
                 return 0
     return 1
-
-
 
 
 T = int(input()) 

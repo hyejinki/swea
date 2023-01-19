@@ -2,7 +2,7 @@
 
 T = int(input()) 
 for test_case in range(1, T + 1):
-    N, M = map(int, input().split())
+    N, M = map(int, input().split())      
     A_arr = list(map(int, input().split()))
     B_arr = list(map(int, input().split()))
     res = []
