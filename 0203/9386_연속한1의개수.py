@@ -3,7 +3,7 @@ for test_case in range(1, T+1):
     N = int(input())
     arr = list(map(int, input()))
     idx = 0
-    while(idx < N):
+    while(idx < N):         
         count = 0
         for i in range(N):
             if arr[i] == 1:
