@@ -19,7 +19,7 @@ for N in range(n):
         #print(''.join(rotated_90[i]), ''.join(rotated_180[i]), ''.join(rotated_270[i]))
         #print(''.join(map(str, rotated_90[i]+ rotated_180[i]+ rotated_270[i])))
         #print(*rotated_90[i], sep = '')
-        print(*rotated_90[i][j], *rotated_180[i][j], *rotated_270[i][j], sep = '')
+        print(*rotated_90[i],' ', *rotated_180[i],' ', *rotated_270[i], sep = '')
         
 '''
 
