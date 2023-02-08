@@ -21,7 +21,7 @@ for test_case in range(1, 11):
                     break
                 else:
                     dj -= 1
-        elif dj <= 98 and arr[di][dj + 1]       # 오른쪽에 있으면
+        elif dj <= 98 and arr[di][dj + 1]:       # 오른쪽에 있으면
             while dj < 99:
                 if arr[di-1][dj-1]:
                     di -= 1
