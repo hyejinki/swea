@@ -17,7 +17,7 @@ def check():
     #열 체크
     arr_T = transpose(arr)
     for i in range(size):
-        if len(set(arr[i])) != 9:
+        if len(set(arr_T[i])) != 9:
             return 0
     #박스 체크       
     for i in range(0, 9, 3):    #0부터 9까지 3씩 증가 -> 0 3 7
