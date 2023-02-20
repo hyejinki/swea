@@ -37,7 +37,7 @@ def get_result(postfix):
             result = right + left
             # 다음 연산을 위해 현재 결과를 스택에 저장
             stack.append(result)
-    return ??
+    return 
 
 for tc in range(1, 11):
     n = int(input())
