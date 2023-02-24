@@ -107,18 +107,20 @@
 # print(f(0, N, key))
 
 
-# q부분집합
-def f(i, k):
-    if i == k:
-        print(bit)
-    else:
-        bit[i] = 0
-        f(i+1, k)
-        bit[i] = 0
-        f(i+1, k)
-    return
+# # q부분집합
+# def f(i, k):
+#     if i == k:
+#         print(bit)
+#     else:
+#         bit[i] = 0
+#         f(i+1, k)
+#         bit[i] = 0
+#         f(i+1, k)
+#     return
 
-A = [2, 3, 7, 9, 8]
-N = len(A)
-bit = [0]*N
-f(0, N)
+# A = [2, 3, 7, 9, 8]
+# N = len(A)
+# bit = [0]*N
+# f(0, N)
+
+
