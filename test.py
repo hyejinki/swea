@@ -107,18 +107,49 @@
 # print(f(0, N, key))
 
 
-# q부분집합
-def f(i, k):
-    if i == k:
-        print(bit)
-    else:
-        bit[i] = 0
-        f(i+1, k)
-        bit[i] = 0
-        f(i+1, k)
-    return
+# # q부분집합
+# def f(i, k):
+#     if i == k:
+#         print(bit)
+#     else:
+#         bit[i] = 0
+#         f(i+1, k)
+#         bit[i] = 0
+#         f(i+1, k)
+#     return
 
-A = [2, 3, 7, 9, 8]
-N = len(A)
-bit = [0]*N
-f(0, N)
+# A = [2, 3, 7, 9, 8]
+# N = len(A)
+# bit = [0]*N
+# f(0, N)
+
+
+while True:
+    txt = input()                             # sys 모듈을 사용하면 '스페이스 바'도 지워줌
+
+    if txt == '.' :               # 리스트 길이가 1이고 동시에 .일때 break
+        break
+    else:
+        stack = []
+        for i in txt:
+            if i == '(':
+                stack.append(i)
+            elif i == '[':
+                stack.append(i)
+            elif i == ')':
+                if len(stack) != 0 and stack[-1] == '(':
+                    stack.pop()
+                else:
+                    print('no')
+                    break
+            elif i == ']':
+                if len(stack) != 0 and stack[-1] == '[':
+                    stack.pop()
+                else:
+                    print('no')
+                    break
+            elif i == '.':
+                if len(stack) == 0:
+                    print('yes')
+                else:
+                    print('no')
