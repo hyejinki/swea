@@ -4,8 +4,10 @@ for test_case in range(1, T+1):
     adjL = [[] for _ in range(N+1)]
     for _ in range(M):
         v, w = map(int, input().split())
-       
         adjL[v].append(w)
+        # adjL[w].append(v)
+    
     print(adjL)
+
 
     
