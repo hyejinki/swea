@@ -14,9 +14,10 @@
 
 A = [7, 2, 5, 4, 3]
 n = len(A)
-
+new = []
 for i in range(0, (1<<n)):
     for j in range(0, n):
         if i & (1<<j):
-            print(A[j])
+            print(A[j], end='')
     print()
+
